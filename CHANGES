@@ -1,0 +1,66 @@
+Changelog
+
+06-2010.1 amitch@rajgad.com
+
+v2.1, amitch@rajgad.com
+Major bug fixes
+	-Ensure Auto save timer starts only when auto save is enabled. Without this, files were saved even from password prompt. Before this bug fix, if you are running two copies of Tuxcard with the same document open, one would over-write the changes by other.
+Cleanups & Changes
+	-Search: Added Search only titles. Allow Search dialog to be resizeable.
+	-ESC works for Cancel when doing a Ctrl+N and prompt for non-dirty file. 
+	-Remove expired entries feature
+	-Multiple other minor bug fixes and changes.
+	-Newer default toolbar icons
+Encryption stuff
+	-Remove encrypt active entry support
+	-Removed auto encrypt support. 
+	-Toggle button pressed on new after an encrypted file.
+ 
+v2.0, amitch@rajgad.com
+New:
+-File encryption feature. This encryptes all the entries in the file and requires password on
+	load. Accessible through toolbar, File menu and shortcut: CTRL+E
+-Change text color for a single note or subtree of notes. New entries get subtree color of the parent, if set.
+-Added a statusbar item for total number of notes\items.
+-Added a dialog box under About menu to show current keyboard shortcuts.
+
+Bug fixes
+-Saveas did not work for unmodified files.
+-The Base64 decoding had an off by one error which resulted in garabage characters at end of some newly 
+decrypted entries. (Not mine)
+-Better search results, Show string starting with the matched text and ensure it does not go over a certain 
+	limit (80 chars). This results in better visiblity on the found items and no wrap-around resulting in 
+	unreadable text.
+-Fixed bug of losing unsaved text when dragging and dropping an item. 
+-Allow selecting notes with same names(title.)
+-Fixed bug of incorrect end calculation in CBlowFish::Encode when using same buffer for 
+		encrypted and decrypted data
+-Crash on encrypted data size == 0.  (Happens only for dev code)
+-Incorrect flagging newly opened file as dirty.
+
+Other minor changes
+-When a new note is created or dropped drop, focus now moves to new item.
+-Added a menu item for F2(Rename in place edit of tree item.)
+-Disabled autoformatting in editor to convert text like - into bullet items.
+-Search dialog: Added accelator keys and set main button as default. This also adds support for Enter 
+  and ESC key. SearchDialog::SearchDialog()
+-Removed unpolite references such as "sorry" from confirm delete dialogbox, "Freaks" from About box.
+  Other minor changes in toolbar text, etc.
+-Modified qmake file, tuxcards.pro to "make install" work correctly, installs docs and icons. Update tuxcards.pro
+ to change DESTDIR.
+
+ 
+v1.2, 
+A lot of minor changes provide an easier overall usage of TuxCards. For details look at "Improvments in Detail"; here are some key features:
+ -Entry History. It does work like a history within a web browser; the last visited entries are remembered.
+ -Encryption using MD5 and BlowFish. The encrypted data is stored using Base64 encoding.
+ -Selection of information format (rtf, txt) for newly created entries.
+ -Inplace renaming of entries within the tree.
+ -Customized line break mode. Keys for creating a new line or new paragraph within the editor may be selected.
+ -Much better paste algorithm for pasting text within the editor.
+ -Improved HTML export.
+ -Several new keyboard shortcuts.
+ -Nice Look & Feel (supporting keramic style and customizable icons)
+ -An alternative set of icons may already be downloaded from www.tuxcards.de.
+ -Increased overall stability.
+ 

@@ -1,0 +1,59 @@
+Tuxcards, a Qt4 based journal & note taking software for Windows, Linux & Mac.
+
+Allows organization in a tree format. Supports encryption for security. Scales well upto 1000 large entries.
+
+Based on http://www.tuxcards.de
+
+Requirements:
+ -Qt4 SDK for compiling & runtime libraries for running. Built & Used with v2009.01
+
+  
+----------------------------------------------------------------
+Build steps, Windows:
+
+#Use Qt command prompt which sets the following to compile on window:
+set QMAKESPEC=win32-g++
+set QTDIR=c:\DevTools\Qt\
+set QT_LIBRARY=c:\DevTools\Qt\lib
+set PATH=%PATH%;c:\DevTools\Qt\qt\bin
+
+#Use qmake to create Makefile, objectscript, etc from tuxcards.pro file
+qmake
+
+#build (change to Makefile.Debug if needed)
+make
+
+#Execute
+.\tuxcards.exe
+
+#If you make changes to dialogs, remake the dailog header files form .ui files
+uic src\gui\dialogs\IOptionsDialog.ui > ui_IOptionsDialog.h
+uic src\gui\dialogs\IPropertyDialog.ui  > ui_IPropertyDialog.h
+uic src\gui\dialogs\IPasswdDialog.ui >  ui_IPasswdDialog.h
+uic src\gui\dialogs\IFileEncryptionPasswordDialog.ui > ui_IFileEncryptionPasswordDialog.h
+
+-----
+Build steps, tried with Ubuntu Linux a while back. 
+
+Linux(Ubuntu) needs CONFIG= entry in tuxcards.pro
+
+#For ubuntu to work with qt4:
+-install qt4-devel incl. qt3-support packages
+
+#set qmake, etc
+sudo update-alternatives --set uic /usr/bin/uic-qt4
+sudo update-alternatives --set qmake /usr/bin/qmake-qt4
+
+#Intialize & build
+. ./qt-env-ubuntu.sh, 
+qmake
+make
+
+----------
+Use QtCreator & load the .pro file & build
+
+Still needs building dialogs, .ui files.
+
+
+
+

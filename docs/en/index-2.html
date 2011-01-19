@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>The TuxCards Handbook: Installation</TITLE>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="keywords" CONTENT="">
+<META NAME="description" CONTENT="">
+</HEAD>
+<BODY BGCOLOR="#ffffff" LINK="#aa0000" TEXT="#000000" > 
+<FONT FACE="Helvetica">
+<A HREF="http://www.kde.org/"><IMG SRC="logotp3.png" BORDER="0" ALT="The K Desktop Environment"></A>
+<HR WIDTH="100%" SIZE=2 ALIGN="CENTER" NOSHADE>
+
+ 
+<P ALIGN="RIGHT">
+
+<A HREF="index-3.html">Next</A>
+ <A HREF="index-1.html">Previous</A>
+ <A HREF="index.html#toc2">Table of Contents</A>
+</P>
+<H3><A NAME="s2">2. Installation</A></H3>
+
+<P>
+<H3><A NAME="ss2.1">2.1 How to obtain TuxCards </A></H3>
+Download it from the
+<a href="http://www.uni-karlsruhe.de/~Alexander.Theel/tuxCards.html">
+TuxCards - WebPage</a>. There, several versions can be found:
+<ul><ul><li><code>rpm</code> package,
+				<li>an uncompiled <code>tar.gz</code>, and
+				<li>a precompiled binary for SuSE-Linux.
+</ul></ul>
+
+<P>
+<P>
+<H3><A NAME="ss2.2">2.2 Requirements</A></H3>
+
+	<b>For TuxCards V0.5, V0.5.1, V0.6beta:</b> If the binary
+  version should be installed, you only need to have the
+  QT-Libraries 2.0. This means the package <code>qtlib2.0</code> should
+  also be installed, if not already.<p>
+
+  For an own compilation <code>qtdevel2</code>
+  is needed as well. Look for those packages at <a href="http://www.trolltech.com">
+  http://www.trolltech.com</a> or install it with you distribution.<p>
+
+  <b>For TuxCards V0.7:</b> You definitly do need at least qt2.2, because I have
+  written an on iconselector basing on the <code>QIconView</code>-Object which
+  was introduced in qt2.2.<p>
+
+<center><i>
+	TuxCards has been successfully tested with Linux SuSE 6.2 (with qt2.0),
+  SuSE 6.3, SuSE 6.4, SuSE 7.0, SuSE 7.2;  as well as Caldera 2.2, Caldera 2.3,
+  Debian (with qt2.3) and several RedHat-Systems.
+</i></center>
+
+<P>
+<P>
+<H3><A NAME="ss2.3">2.3 Compilation and installation</A>
+</H3>
+
+<P>
+<P>In order to compile and install TuxCards on your system, type the following in
+the base directory of the TuxCards distribution:
+<P>
+<BLOCKQUOTE><CODE>
+<PRE>
+% ./configure
+% make
+% make install
+</PRE>
+</CODE></BLOCKQUOTE>
+<P>
+<P>Since TuxCards uses 
+<code>
+autoconf
+</code>
+ you should have not trouble
+compiling it.
+Should you run into problems please report them to the the author at 
+<A HREF="mailto:alex.theel@gmx.net">Alexander Theel</A><P>
+<P>
+<P>
+<P ALIGN="RIGHT">
+
+<A HREF="index-3.html">Next</A>
+ <A HREF="index-1.html">Previous</A>
+ <A HREF="index.html#toc2">Table of Contents</A>
+</P>
+<CENTER>
+<HR WIDTH="100%" SIZE=3 ALIGN=CENTER NOSHADE>
+</CENTER>    
+</FONT>
+
+ 
+</BODY>
+</HTML>

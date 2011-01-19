@@ -1,0 +1,7 @@
+Steps to run standalone encryption test program
+
+debug\tests.exe -d test 1-encrypted.txt 1-decrypted.txt
+
+debug\tests.exe -d tmp 2-encrypted.txt 2-decrypted.txt
+
+debug\tests.exe -e test 1-input.txt 1-encrypted.txt

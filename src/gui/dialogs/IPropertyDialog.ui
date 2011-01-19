@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" stdsetdef="1">
+  <author></author>
+  <comment></comment>
+  <exportmacro></exportmacro>
+  <class>IPropertyDialog</class>
+  <widget class="QDialog" name="IPropertyDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>417</width>
+        <height>294</height>
+      </rect>
+    </property>
+    <property name="maximumSize">
+      <size>
+        <width>600</width>
+        <height>32767</height>
+      </size>
+    </property>
+    <property name="windowTitle">
+      <string>Property Dialog</string>
+    </property>
+    <property name="sizeGripEnabled">
+      <bool>true</bool>
+    </property>
+    <layout class="QVBoxLayout">
+      <property name="margin">
+        <number>11</number>
+      </property>
+      <property name="spacing">
+        <number>6</number>
+      </property>
+      <item>
+        <widget class="QTabWidget" name="tabWidget">
+          <widget class="QWidget" name="Widget8">
+            <attribute name="title">
+              <string>Properties</string>
+            </attribute>
+            <layout class="QVBoxLayout">
+              <item>
+                <widget class="QLabel" name="textLabel1">
+                  <property name="text">
+                    <string>&lt;b&gt;Entry Name&lt;/b&gt;</string>
+                  </property>
+                  <property name="wordWrap">
+                    <bool>false</bool>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <layout class="QHBoxLayout">
+                  <item>
+                    <widget class="QLineEdit" name="mpNameLine">
+                      <property name="focusPolicy">
+                        <enum>Qt::StrongFocus</enum>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QComboBox" name="mpTextFormatChoser">
+                      <property name="minimumSize">
+                        <size>
+                          <width>0</width>
+                          <height>35</height>
+                        </size>
+                      </property>
+                      <property name="currentIndex">
+                        <number>1</number>
+                      </property>
+                      <property name="toolTip" stdset="0">
+                        <string>Chose the Text Format</string>
+                      </property>
+                      <item>
+                        <property name="text">
+                          <string>ASCII</string>
+                        </property>
+                        <property name="pixmap">
+                          <pixmap>image0</pixmap>
+                        </property>
+                      </item>
+                      <item>
+                        <property name="text">
+                          <string>RTF</string>
+                        </property>
+                        <property name="pixmap">
+                          <pixmap>image1</pixmap>
+                        </property>
+                      </item>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <widget class="Q3ButtonGroup" name="buttonGroup1">
+                  <property name="font">
+                    <font>
+                      <bold>true</bold>
+                    </font>
+                  </property>
+                  <property name="title">
+                    <string>Icon</string>
+                  </property>
+                  <layout class="QVBoxLayout">
+                    <item>
+                      <layout class="QHBoxLayout">
+                        <item>
+                          <widget class="QRadioButton" name="mpNoIconRB">
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="text">
+                              <string>No icon</string>
+                            </property>
+                            <property name="checked">
+                              <bool>true</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="spacer2">
+                            <property name="sizeHint">
+                              <size>
+                                <width>40</width>
+                                <height>20</height>
+                              </size>
+                            </property>
+                            <property name="sizeType">
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                        <item>
+                          <widget class="QRadioButton" name="mpUseIconRB">
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="text">
+                              <string>Specify an icon</string>
+                            </property>
+                            <property name="checked">
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <widget class="QPushButton" name="mpIconButton">
+                            <property name="enabled">
+                              <bool>false</bool>
+                            </property>
+                            <property name="sizePolicy">
+                              <sizepolicy>
+                                <hsizetype>0</hsizetype>
+                                <vsizetype>0</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                              </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                              <size>
+                                <width>32</width>
+                                <height>32</height>
+                              </size>
+                            </property>
+                            <property name="text">
+                              <string/>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                              <string>Choose a file for the icon</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <widget class="QLabel" name="mpIconLocLabel">
+                        <property name="enabled">
+                          <bool>false</bool>
+                        </property>
+                        <property name="font">
+                          <font>
+                            <bold>false</bold>
+                          </font>
+                        </property>
+                        <property name="text">
+                          <string>Icon Location</string>
+                        </property>
+                        <property name="wordWrap">
+                          <bool>false</bool>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QLabel" name="mpLocationLabel">
+                        <property name="enabled">
+                          <bool>false</bool>
+                        </property>
+                        <property name="font">
+                          <font>
+                            <bold>false</bold>
+                          </font>
+                        </property>
+                        <property name="frameShape">
+                          <enum>QFrame::Box</enum>
+                        </property>
+                        <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                        </property>
+                        <property name="text">
+                          <string>/Icon/Location</string>
+                        </property>
+                        <property name="wordWrap">
+                          <bool>false</bool>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+              <item>
+                <widget class="Q3ButtonGroup" name="mpEncryptionPanel">
+                  <property name="maximumSize">
+                    <size>
+                      <width>0</width>
+                      <height>0</height>
+                    </size>
+                  </property>
+                  <property name="font">
+                    <font>
+                      <bold>true</bold>
+                    </font>
+                  </property>
+                  <property name="title">
+                    <string>Encryption</string>
+                  </property>
+                  <layout class="QHBoxLayout">
+                    <item>
+                      <layout class="QVBoxLayout">
+                        <item>
+                          <widget class="QCheckBox" name="mpEncryptCheckBox">
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="text">
+                              <string>Encrypt Entry</string>
+                            </property>
+                          </widget>
+                        </item>
+                        <item>
+                          <spacer name="spacer4">
+                            <property name="sizeHint">
+                              <size>
+                                <width>20</width>
+                                <height>40</height>
+                              </size>
+                            </property>
+                            <property name="sizeType">
+                              <enum>QSizePolicy::Expanding</enum>
+                            </property>
+                            <property name="orientation">
+                              <enum>Qt::Vertical</enum>
+                            </property>
+                          </spacer>
+                        </item>
+                      </layout>
+                    </item>
+                    <item>
+                      <layout class="QGridLayout">
+                        <item row="0" column="0">
+                          <widget class="QLabel" name="textLabel1_2">
+                            <property name="enabled">
+                              <bool>false</bool>
+                            </property>
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="text">
+                              <string>Password:</string>
+                            </property>
+                            <property name="wordWrap">
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="1" column="1">
+                          <widget class="QLineEdit" name="mpPasswdLineTwo">
+                            <property name="enabled">
+                              <bool>false</bool>
+                            </property>
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="echoMode">
+                              <enum>QLineEdit::Password</enum>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="1" column="0">
+                          <widget class="QLabel" name="textLabel1_3">
+                            <property name="enabled">
+                              <bool>false</bool>
+                            </property>
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="text">
+                              <string>Retype:</string>
+                            </property>
+                            <property name="wordWrap">
+                              <bool>false</bool>
+                            </property>
+                          </widget>
+                        </item>
+                        <item row="0" column="1">
+                          <widget class="QLineEdit" name="mpPasswdLineOne">
+                            <property name="enabled">
+                              <bool>false</bool>
+                            </property>
+                            <property name="font">
+                              <font>
+                                <bold>false</bold>
+                              </font>
+                            </property>
+                            <property name="echoMode">
+                              <enum>QLineEdit::Password</enum>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                              <string>Enter Password for Encryption</string>
+                            </property>
+                          </widget>
+                        </item>
+                      </layout>
+                    </item>
+                  </layout>
+                </widget>
+              </item>
+            </layout>
+          </widget>
+        </widget>
+      </item>
+      <item>
+        <layout class="QHBoxLayout">
+          <property name="margin">
+            <number>0</number>
+          </property>
+          <property name="spacing">
+            <number>6</number>
+          </property>
+          <item>
+            <spacer name="Horizontal Spacing2">
+              <property name="sizeHint">
+                <size>
+                  <width>20</width>
+                  <height>20</height>
+                </size>
+              </property>
+              <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </spacer>
+          </item>
+          <item>
+            <widget class="QPushButton" name="mpButtonApply">
+              <property name="text">
+                <string>&amp;Apply</string>
+              </property>
+              <property name="shortcut">
+                <string>Alt+A</string>
+              </property>
+              <property name="autoDefault">
+                <bool>true</bool>
+              </property>
+              <property name="default">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="pButtonCancel">
+              <property name="text">
+                <string>&amp;Cancel</string>
+              </property>
+              <property name="shortcut">
+                <string/>
+              </property>
+              <property name="autoDefault">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+    </layout>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <tabstops>
+    <tabstop>mpNameLine</tabstop>
+    <tabstop>mpTextFormatChoser</tabstop>
+    <tabstop>mpNoIconRB</tabstop>
+    <tabstop>mpIconButton</tabstop>
+    <tabstop>mpEncryptCheckBox</tabstop>
+    <tabstop>mpPasswdLineOne</tabstop>
+    <tabstop>mpButtonApply</tabstop>
+    <tabstop>pButtonCancel</tabstop>
+    <tabstop>tabWidget</tabstop>
+  </tabstops>
+  <images>
+    <image name="image0">
+      <data format="PNG" length="780">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000002d349444154388d9d953f681b571cc73f2e37fc041e749082041d72e0a1273254a681b6b8830d1de251ab9b429b6ece285a5a7087823b18772aee524297d2c52002a53124442e243d190abd21462f83e10c35dc41031244f07ea007e970966cf9a434f16fb883f7e37ddef77deecf9b8ba2088087fb0f5f00e0409d9edd4fc7acb3c59ecbdbea1486d0fca239f7e7d6ad17cd4fea789cabd58f56b94ca9a66c6efdc808ca52e31cf874f5c5eb8b5327774d975a589bda8bf67f67d94b58bb11c25203763727135fb6a29f3758bb11525d5e87dd260c62de186f67e4f3356be7b31a6b4b410e7dd0846731388a2abaa63b1332d173d0f9e1631aef8554af37cea01ee0515431cbe345c7edaf3f60f5dd208776be877e0eb540727c0efc3a2aa26f57082afe19f4991943cd11987fa7a8f8bfb27b3b84f545fcb7ea85a4e618e2146e3f96a28a9739b67b3b94de0e29c932bddf76f02f241d41dbf7db7363b075167889e3275d4a95325c09b187110cfa5807250473a2c4ffc0ed831c0aafaac25a82937d78e77dc80cfaa44dff38415c403c4831a94e4027c1b36a68b14ef3b49e608f0c49d6271928490f5485cd03414426a615de8a09c79a8f055907aed5b107fb9838a2f334c15a257642eb719ff59babdcd96d4f078f54d4c21a0c012c38c5aa52f2ae624f524cfc379da709d173253eb288c0f657ebd841afb0d1e92adc29d4291b5f7ecef2c2557ca7b4fe32a40e4ca6ac7fba860894e705eddbd9e0f10732b4806251cc1f7700d8f8a94559047f6191950f435644289785aaef531648d0c2c32ffe2b0e63d4014ef975afc3bd475d64becaf6370d5a9d149c222208a0cf7b640a25aff8e51654040b417e420c7a2449ca2fdfdd224e947b714afd5a40f0a68f7fa58278000a4e31269b9d78bca28e2f6c6f6d931c27542a8acc0b6110e00be08d8e2c459d4c1e6385c4c3fc88890fd3711255c55a0567a9fa42962564a3d5873978146266e2d6dd16adbbad8b662e5dff013f2484d66367b3230000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+      <data format="PNG" length="952">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000037f49444154388dad953f681b6718c67f2a57fa1ec870072adc810cbea1834c33d810880d192cf0108514ea51c15992cd4ea1b5d321769ba55d4ac69642a93304aa420bc9544dc11d4a94428a35187a010f2788c9092ab81b0cf70e1fa8c3e98f15c99dfa2cdfddf7e7b9e77ddfe77bafd06ab5781b477ffcd6771c1f351902a8010c2446c1409aa66009d76f5c2f4c1d1ec09a352922acaed7f04a1e987c971a452c41cf94b817d36eb779fefbf3fea39f1f71f0c3c1d407661263c0293ad873f668ca267fb6e76cc491d1e9bd4ff7b87deb76ffe0f124f96c62728517c1b66dfc924ff86e4875bd8aaa52bf55ef371e3746e433898761ff174484e875848850dfac83050fbf79d8dffd7cb770b16255b413913d7d42f8ac49f43a26d8bc897f9611977d963fbe89a284af42ee6cddc12ff98840301f8c280ab35cf1e6fe4e7f75bec24f9ad22d7b388ecb4627c68e220e2f55a8dddbc79ff7499284f834a67b1a11451dc2577f13f752b6ef6e17a614bfa9d7fb95cbab7c17be20d8dca2b6be46500ee0c11734cf428e54a9997caf2b2e5a526c6b10bbc968bd6c00f0ce04e9471bfdd5ab559e9cb4911b75aad76a2c5616b14f23ec9247aa29cb1f2e8f5d4186238208788e8b537211649ad85ff0699d84b48b0ed5b52ac10779ceb27608bd2e1182172ce08a4096010a4611b1b105dc3941d169e2e0f20aa28af83ebee78f179e3549a2887649708b36d9d08a665c7e471cc462e4a611f17bf7f7fac97148a313e2971c44f20dc997fbd84597e69f2dd6ae6de07b1e3690690a464113c4642829628dfd3f22f61d9760a9c276f3b08025882564ed2344217ad9e250c02fb9d06e13f762308c949ff7fd709c70859da6834548ff6a91fdda203a0e713b11c195252abd84a8d745de77081614a7283929906a3a68583a491c9fc64839cfebd2d3264937a501542e555854a56ab9c4bd2e1d47582982239217ce809a74e0059d56fc753764258db13fdbea278e4d5360e7ee0ee1719bc393102c2516a85d5d21f0fc8152cd151ac064a3b44c10effed21c35901fbfffb6bf7fef2bbcb243e0f9bc701d325556ca7e5ed881ba0952a3a84966e77808d7711021afbec0ca956554b3b142407558b864900e1d8d13ae388f6c50e5b15f33c4020c7981f4dcfc90348f81e19dbcb01fc7bd083b153293621bc8c8f2d1a483f087ca93911bd27fd2e91c9f47278ad8fe64172557f8f6ef09a360c9e43be497d9e49a67b6cdff03ff02c07cb04ed281978c0000000049454e44ae426082</data>
+    </image>
+  </images>
+  <connections>
+    <connection>
+      <sender>mpNoIconRB</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>mpLocationLabel</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>mpNoIconRB</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>mpIconLocLabel</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>mpNoIconRB</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>mpIconButton</receiver>
+      <slot>setDisabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>pButtonCancel</sender>
+      <signal>clicked()</signal>
+      <receiver>IPropertyDialog</receiver>
+      <slot>reject()</slot>
+    </connection>
+    <connection>
+      <sender>mpButtonApply</sender>
+      <signal>clicked()</signal>
+      <receiver>IPropertyDialog</receiver>
+      <slot>accept()</slot>
+    </connection>
+    <connection>
+      <sender>mpEncryptCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>textLabel1_3</receiver>
+      <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>mpEncryptCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>mpPasswdLineOne</receiver>
+      <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>mpEncryptCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>textLabel1_2</receiver>
+      <slot>setEnabled(bool)</slot>
+    </connection>
+    <connection>
+      <sender>mpEncryptCheckBox</sender>
+      <signal>toggled(bool)</signal>
+      <receiver>mpPasswdLineTwo</receiver>
+      <slot>setEnabled(bool)</slot>
+    </connection>
+  </connections>
+</ui>
